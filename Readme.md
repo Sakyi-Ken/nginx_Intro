@@ -9,3 +9,5 @@
 ### Lesson 2 (Securing Your NGINX Server)
 - Password Protecting Applications.
 - Implementing Rate Limiting.
+- Blocking Malicious Traffic.
+- Enabling HTTPS Security.
