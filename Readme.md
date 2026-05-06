@@ -11,3 +11,6 @@
 - Implementing Rate Limiting.
 - Blocking Malicious Traffic.
 - Enabling HTTPS Security.
+
+### Lesson 3 (Load Balancing and Performance Tuning)
+- Implementing Basic Load Balancing.
