@@ -14,3 +14,4 @@
 
 ### Lesson 3 (Load Balancing and Performance Tuning)
 - Implementing Basic Load Balancing.
+- Advanced Load Balancing Strategies.
