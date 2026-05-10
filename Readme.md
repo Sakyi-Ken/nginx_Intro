@@ -18,6 +18,9 @@
 - Caching Responses for Performance.
 - Enabling Gzip Compression.
 
+### Lesson 4 (Advanced NGINX Configuration and Monitoring)
+- URL Rewriting and Redirects.
+
 
 ## Notes on Lesson 3
 __Important Consideration on cache validity.__
@@ -25,7 +28,7 @@ __Important Consideration on cache validity.__
 * Use cache purging to manually remove outdated entries when data changes on the backend.
 * Implement cache revalidation, so NGINX checks with the backend (using conditional requests with ETags or Last-Modified headers) before serving cached content.
 
-## Variables in Lesson 3
+### Variables in Lesson 3
 - $scheme: Whether the request used HTTP or HTTPS.
 - $proxy_host: The target hostname being proxied to.
 - $request_uri: The full path and query string of the request.
@@ -36,3 +39,7 @@ __Important Consideration on cache validity.__
 - error: When an error occurs connecting to the backend.
 - timeout: When the backend doesn't respond in time.
 - updating: While a cache entry is being refreshed in the background.
+
+## Notes on Lesson 4
+__Redirects__ tell the client's browser to make a new request to a different URL, which is visible to the user.
+__Rewrites__ happen internally on the server, transforming one URL pattern into another without the client knowing.
