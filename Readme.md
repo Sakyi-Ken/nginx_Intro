@@ -21,6 +21,7 @@
 ### Lesson 4 (Advanced NGINX Configuration and Monitoring)
 - URL Rewriting and Redirects.
 - Creating Custom Error Pages.
+- Implementing Health Checks.
 
 
 ## Notes on Lesson 3
