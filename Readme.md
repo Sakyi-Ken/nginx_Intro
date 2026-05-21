@@ -23,6 +23,7 @@
 - Creating Custom Error Pages.
 - Implementing Health Checks.
 
+### Lesson 5 (Extending NGINX with Lua and OpenResty)
 
 ## Notes on Lesson 3
 __Important Consideration on cache validity.__
@@ -45,3 +46,12 @@ __Important Consideration on cache validity.__
 ## Notes on Lesson 4
 __Redirects__ tell the client's browser to make a new request to a different URL, which is visible to the user.
 __Rewrites__ happen internally on the server, transforming one URL pattern into another without the client knowing.
+
+## Notes on Lesson 5
+**Lua** is a lightweight, fast scripting language designed to be embedded into other programs. 
+**OpenResty** is an NGINX-based distribution that embeds Lua into the NGINX request lifecycle (via the Lua module and a set of supporting libraries), so you can run Lua code inside NGINX worker processes while handling requests.
+
+*Three main directives of OpenResty*
+- access_by_lua_block: Runs during the access phase, before content generation; perfect for authentication and authorization
+- content_by_lua_block: Executes during the content phase to generate responses
+- log_by_lua_block: Executes during the log phase after the response is sent; ideal for logging and metrics
