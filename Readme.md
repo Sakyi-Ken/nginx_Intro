@@ -24,6 +24,8 @@
 - Implementing Health Checks.
 
 ### Lesson 5 (Extending NGINX with Lua and OpenResty)
+- Getting Started with Lua.
+- Manipulating Requests and Responses.
 
 ## Notes on Lesson 3
 __Important Consideration on cache validity.__
@@ -55,3 +57,12 @@ __Rewrites__ happen internally on the server, transforming one URL pattern into 
 - access_by_lua_block: Runs during the access phase, before content generation; perfect for authentication and authorization
 - content_by_lua_block: Executes during the content phase to generate responses
 - log_by_lua_block: Executes during the log phase after the response is sent; ideal for logging and metrics
+
+__Practical Applications:__
+The techniques we've covered enable several real-world use cases:
+
+- API Gateway Pattern: Accept tokens in various formats (query params, custom headers) and normalize them into standard Authorization headers.
+- A/B Testing: Route requests to different backend versions based on user segments or feature flags.
+- Mobile Optimization: Detect mobile devices and serve optimized content.
+- Security Enhancement: Add security headers like CORS, CSP, or HSTS to all responses.
+- Performance Monitoring: Calculate and log request processing times.
